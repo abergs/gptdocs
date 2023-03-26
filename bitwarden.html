@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Docs</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <a href="index.html">Try Passwordless.dev docs GPT</a>
+    <h1>Bitwarden Contrib Docs GPT</h1>
+    <div id="app">
+        <ul id="chat">
+            <li v-for="message in chats" :class="{human: message.human}">
+                <span v-if="message.text == ''">🔮 Thinking...</span>
+                <span>{{message.text}}</span>
+                <div class="sources">
+                    <span class="source" v-for="source in message.sources">{{source}}</span>
+                </div>
+            </li>
+        </ul>
+        <input placeholder="How do I get started?" type="text" id="prompt" v-on:keyup.enter.prevent.capture="send" v-model="prompt" autofocus ref="myinput" prompt-key="H0YDvnxGETFEDuKRdHVBFlF8rvq87Nto">
+        <br /><small>Press enter to ask</small>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

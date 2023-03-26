@@ -1,0 +1,26 @@
+
+body {
+    font-family: sans-serif;
+}
+
+input,button {
+    padding: 5px 10px;
+}
+
+li {
+    white-space: break-spaces;
+}
+
+.sources {
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.source {
+    padding: 5px 10px; 
+    background: #eee;
+    border-radius: 5px;
+    font-family: monospace;
+}
