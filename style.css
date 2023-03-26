@@ -1,14 +1,38 @@
 
 body {
-    font-family: sans-serif;
+    font-family: sans-serif;    
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-left: 1px solid #eee;
+    padding: 20px;
 }
 
 input,button {
-    padding: 5px 10px;
+    padding: 10px 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;    
+    border: 2px solid rgb(102, 154, 239);
+    margin-top: 30px;
 }
 
 li {
     white-space: break-spaces;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.human {
+    color: rgb(34 118 255);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .sources {
@@ -19,6 +43,7 @@ li {
 }
 
 .source {
+    font-size: .9em;
     padding: 5px 10px; 
     background: #eee;
     border-radius: 5px;
